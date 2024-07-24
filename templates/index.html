@@ -1,0 +1,26 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Edad</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <script src="../static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Edad</h1>
+        <form id="calcularEdadForm">
+            <label for="año_nacimiento">Ingresa tu año de nacimiento:</label>
+            <input type="number" id="año_nacimiento" name="año_nacimiento" required>
+            <button type="button" onclick="calcularEdad()">Calcular Edad</button>
+        </form>
+        <div id="resultado" class="hidden">
+            <h2>Resultado</h2>
+            <p id="edadResultado"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
